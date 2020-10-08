@@ -39,3 +39,16 @@
     left: 100px;
     transform: rotateX(10deg) rotateY(10deg);
 }
+.cubo:hover {
+    animation-name: girar;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+}
+@keyframes girar {
+    from {
+        transform: translateZ(100px) rotateX(10deg) rotateY(10deg);
+    }
+    to {
+        transform: translateZ(100px) rotateX(360deg) rotateY(360deg);
+    }
+}
